@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Terkirim - OSIS Nawasena</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .success-container {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 1.5rem;
+            animation: bounce 2s infinite;
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+            40% {transform: translateY(-20px);}
+            60% {transform: translateY(-10px);}
+        }
+    </style>
+</head>
+<body>
+    <main class="container success-container">
+        <div class="success-icon">✅</div>
+        <h1 style="font-size: 2.5rem; margin-bottom: 1rem;">Terima Kasih!</h1>
+        <p style="color: var(--text-muted); max-width: 500px; margin-bottom: 2rem;">
+            Aspirasimu telah kami terima. OSIS Nawasena akan meninjau pesanmu untuk mewujudkan sekolah yang lebih baik.
+        </p>
+        <a href="index.html" class="btn-primary" style="text-decoration: none; padding: 15px 30px; border-radius: 30px;">
+            Kembali ke Beranda
+        </a>
+    </main>
+</body>
+</html>
