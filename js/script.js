@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnToggle = document.getElementById('dark-mode-toggle');
     btnToggle?.addEventListener('click', () => {
         document.body.classList.toggle('dark-theme');
-        btnToggle.innerHTML = document.body.classList.contains('dark-theme') ? '☀️' : '🌓';
+        btnToggle.innerHTML = document.body.classList.contains('dark-theme') ? '<i class="material-icons light" style="color:white;">sunny</i>' : '<i class="material-icons dark">dark_mode</i>';
     });
 
     // Hamburger
