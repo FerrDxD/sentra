@@ -10,12 +10,11 @@
 }
 
 .btn-theme{
-    background: var(--bg-card);
+    background: none;
     border: none;
     padding: 8px 12px;
     border-radius: 8px;
     cursor: pointer;
-    box-shadow: var(--shadow);
     transition: background 0.3s ease;
 }
 

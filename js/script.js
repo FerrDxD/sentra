@@ -4,12 +4,7 @@ const dataAgenda = [
     { judul: "Classmeet Koordinasi", tanggal: "12 Jan 2026", ket: "Pembentukan panitia dan teknis lomba." }
 ];
 
-const playlist = [
-    { title: "Radio Nawasena - Stream 1", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" },
-    { title: "Radio Nawasena - Stream 2", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3" },
-     { title: "Radio Nawasena - Stream 3", url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3" }
-];
-
+let playlist = [];
 let currentTrackIndex = 0;
 
 // --- UTILITY: Penjaga agar tidak error jika elemen tidak ada ---
@@ -33,7 +28,18 @@ function tampilkanAgenda() {
 
 function tampilkanSekbid() {
     safeExecute('sekbid-list', (container) => {
-        const listSekbid = ["Keimanan dan Ketaqwaan Terhadap Tuhan Yang Maha Esa", "Budi Pekerti atau Akhlak Mulia", "Kepripadian Unggul, Wawasan Kebangsaan dan Bela Negara", "Prestasi Akademik, Seni, dan atau Olahraga Sesuai Minat dan Bakat", "Demokrasi, Hak Asasi Manusia, Pendidikan Politik, Lingkungan Hidup, Kepekaan dan Toleransi Sosial Dalam Konteks Masyarakat Plural", "Kreastivitas, Keterampilan dan Kewirausahaan", "Kualitas Jasmani, Kesehatan, dan Gizi Berbasis Sumber Gizi Yang Terdiversifikasi", "Sastra dan Budaya", "Teknologi, Informasi, dan Komunikasi", "Komunikasi Dalam Bahasa Inggris"];
+        const listSekbid = [
+            "Keimanan dan Ketaqwaan Terhadap Tuhan Yang Maha Esa",
+            "Budi Pekerti atau Akhlak Mulia",
+            "Kepripadian Unggul, Wawasan Kebangsaan dan Bela Negara",
+            "Prestasi Akademik, Seni, dan atau Olahraga Sesuai Minat dan Bakat",
+            "Demokrasi, Hak Asasi Manusia, Pendidikan Politik, Lingkungan Hidup, Kepekaan dan Toleransi Sosial Dalam Konteks Masyarakat Plural",
+            "Kreastivitas, Keterampilan dan Kewirausahaan",
+            "Kualitas Jasmani, Kesehatan, dan Gizi Berbasis Sumber Gizi Yang Terdiversifikasi",
+            "Sastra dan Budaya",
+            "Teknologi, Informasi, dan Komunikasi",
+            "Komunikasi Dalam Bahasa Inggris"
+        ];
         container.innerHTML = listSekbid.map((nama, i) => `
             <div class="sekbid-card">
                 <span class="sekbid-num">${i + 1}</span>
@@ -49,15 +55,28 @@ const audioPlayer = document.getElementById('audio-player');
 const trackTitle = document.querySelector('.track-name');
 
 function loadTrack(index) {
-    if (audioPlayer && trackTitle) {
-        audioPlayer.src = playlist[index].url;
-        trackTitle.innerText = playlist[index].title;
+    const track = playlist[index];
+    if (audioPlayer && trackTitle && track) {
+        audioPlayer.src = track.url;
+        trackTitle.innerText = track.title;
     }
 }
 
 function playMusic() { audioPlayer?.play(); }
 function pauseMusic() { audioPlayer?.pause(); }
+function playPauseMusic() {
+    const btnPlayPause = document.getElementById('btn-play-pause');
+    if (audioPlayer?.paused) {
+        playMusic();
+        btnPlayPause.innerHTML = '<span class="material-symbols-outlined">pause</span>';
+    } else {
+        pauseMusic();
+        btnPlayPause.innerHTML = '<span class="material-symbols-outlined">play_arrow</span>';
+    }
+}
+
 function nextMusic() {
+    if (playlist.length === 0) return;
     currentTrackIndex = (currentTrackIndex + 1) % playlist.length;
     loadTrack(currentTrackIndex);
     playMusic();
@@ -67,13 +86,28 @@ function nextMusic() {
 document.addEventListener('DOMContentLoaded', () => {
     tampilkanAgenda();
     tampilkanSekbid();
-    loadTrack(currentTrackIndex);
+
+    // Fetch track list from assets/radio/tracks.json
+    fetch('assets/radio/tracks.json')
+        .then(res => res.json())
+        .then(tracks => {
+            playlist = tracks.map(filename => ({
+                title: `Radio Nawasena - ${filename.replace(/\.[^/.]+$/, "")}`,
+                url: `assets/radio/${filename}`
+            }));
+            if (playlist.length > 0) {
+                currentTrackIndex = 0;
+                loadTrack(currentTrackIndex);
+            }
+        });
 
     // Dark Mode
     const btnToggle = document.getElementById('dark-mode-toggle');
     btnToggle?.addEventListener('click', () => {
         document.body.classList.toggle('dark-theme');
-        btnToggle.innerHTML = document.body.classList.contains('dark-theme') ? '<i class="material-icons light" style="color:white;">sunny</i>' : '<i class="material-icons dark">dark_mode</i>';
+        btnToggle.innerHTML = document.body.classList.contains('dark-theme')
+            ? '<span class="material-symbols-outlined light" style="color:white;">sunny</span>'
+            : '<span class="material-symbols-outlined dark">dark_mode</span>';
     });
 
     // Hamburger
@@ -84,4 +118,4 @@ document.addEventListener('DOMContentLoaded', () => {
         hamburger.classList.toggle('toggle');
     });
 });
-  
+
