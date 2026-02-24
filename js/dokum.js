@@ -20,10 +20,10 @@
                     events: [
                         {
                             id: 1,
-                            title: "LDKS Calon Pengurus",
+                            title: "Hari Guru Nasional",
                             date: "10 Oktober 2025",
-                            description: "Pelatihan kepemimpinan tingkat dasar untuk menumbuhkan jiwa integritas.",
-                            thumbnail: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=600",
+                            description: "Perayaan Hari Guru Nasional dengan berbagai kegiatan kreatif dan edukatif.",
+                            thumbnail: "assets/event/hgn/IMG_4848.JPG",
                             images: [
                                 {
                                     url: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1200",
