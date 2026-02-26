@@ -205,10 +205,9 @@
                 number: 1,
                 name: "Keimanan dan Ketaqwaan Terhadap Tuhan Yang Maha Esa",
                 members: [
-                    "Ahmad Fauzi - Koordinator",
-                    "Siti Nurhaliza - Anggota",
-                    "Budi Santoso - Anggota",
-                    "Dewi Lestari - Anggota"
+                    "ALVINA DAMAYANTI - Koordinator",
+                    "VIOLA BINTANG PUTRI - Anggota",
+                    "IBNU AZIZ SUSANTO - Anggota",
                 ],
                 programs: [
                     {
@@ -227,9 +226,8 @@
                 number: 2,
                 name: "Budi Pekerti atau Akhlak Mulia",
                 members: [
-                    "Rina Wijaya - Koordinator",
-                    "Andi Saputra - Anggota",
-                    "Maya Sari - Anggota"
+                    "IRMA ANGGIANI - Koordinator",
+                    "RORO WILISH - Anggota",
                 ],
                 programs: [
                     {
@@ -243,9 +241,9 @@
                 number: 3,
                 name: "Kepribadian Unggul, Wawasan Kebangsaan dan Bela Negara",
                 members: [
-                    "Joko Prasetyo - Koordinator",
-                    "Rizki Ramadhan - Anggota",
-                    "Putri Amanda - Anggota"
+                    "FAIZAL ARFA MUBAROQ - Koordinator",
+                    "NURAFNI LIDYA YUNIAWATI - Anggota",
+                    "AZKA RAIHANA PRIRA - Anggota"
                 ],
                 programs: [
                     {
@@ -264,9 +262,9 @@
                 number: 4,
                 name: "Prestasi Akademik, Seni, dan atau Olahraga Sesuai Minat dan Bakat",
                 members: [
-                    "Nadia Putri - Koordinator",
-                    "Fajar Nugroho - Anggota",
-                    "Larasati Dewi - Anggota"
+                    "GALUH CANDRAWATI PUTRI - Koordinator",
+                    "ZASKIA INDRIANI PUTRI - Anggota",
+                    "SITI NURUL FADILAH - Anggota"
                 ],
                 programs: [
                     {
@@ -285,9 +283,9 @@
                 number: 5,
                 name: "Demokrasi, Hak Asasi Manusia, Pendidikan Politik, Lingkungan Hidup, Kepekaan dan Toleransi Sosial Dalam Konteks Masyarakat Plural",
                 members: [
-                    "Dian Purnama - Koordinator",
-                    "Galih Pratama - Anggota",
-                    "Sarah Azzahra - Anggota"
+                    "KANIA ANANDA PRATIWI - Koordinator",
+                    "K. TITHANIA WIDYA R.F - Anggota",
+                    "JIHAN AIRA PUTRI- Anggota"
                 ],
                 programs: [
                     {
@@ -306,9 +304,9 @@
                 number: 6,
                 name: "Kreativitas, Keterampilan dan Kewirausahaan",
                 members: [
-                    "Rama Wijaya - Koordinator",
-                    "Intan Permata - Anggota",
-                    "Wisnu Wardhana - Anggota"
+                    "ADINDA SEPTIANA PUTRI - Koordinator",
+                    "KEYLA ZALFA NAQIYA - Anggota",
+                    "ZAKI ABDUL HAQ - Anggota"
                 ],
                 programs: [
                     {
@@ -322,9 +320,8 @@
                 number: 7,
                 name: "Kualitas Jasmani, Kesehatan, dan Gizi Berbasis Sumber Gizi Yang Terdiversifikasi",
                 members: [
-                    "Fitri Handayani - Koordinator",
-                    "Arif Rahman - Anggota",
-                    "Wulan Sari - Anggota"
+                    "DEVIRA NABILIRAH - Koordinator",
+                    "NURAINI - Anggota",
                 ],
                 programs: [
                     {
@@ -343,9 +340,9 @@
                 number: 8,
                 name: "Sastra dan Budaya",
                 members: [
-                    "Kartika Sari - Koordinator",
-                    "Dimas Prayoga - Anggota",
-                    "Ratna Dewi - Anggota"
+                    "GADIS YURA SAFA RASIKAH - Koordinator",
+                    "BIANCA MYISHA NADIRA - Anggota",
+                    "RENI - Anggota"
                 ],
                 programs: [
                     {
@@ -359,9 +356,9 @@
                 number: 9,
                 name: "Teknologi, Informasi, dan Komunikasi",
                 members: [
-                    "Bayu Aji - Koordinator",
-                    "Citra Lestari - Anggota",
-                    "Eko Prasetyo - Anggota"
+                    "AMIRAH HADJRIAH HARIS - Koordinator",
+                    "NADIA KOHERUNISA - Anggota",
+                    "CIKAL RAYA NUR AZKIYA - Anggota"
                 ],
                 programs: [
                     {
@@ -380,9 +377,8 @@
                 number: 10,
                 name: "Komunikasi Dalam Bahasa Inggris",
                 members: [
-                    "Amanda Putri - Koordinator",
-                    "Reza Pahlevi - Anggota",
-                    "Nabila Syifa - Anggota"
+                    "MARIO TEGUH JUNIOR - Koordinator",
+                    "LISTIANA DEWI - Anggota",
                 ],
                 programs: [
                     {
