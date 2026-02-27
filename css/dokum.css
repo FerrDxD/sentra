@@ -1,4 +1,9 @@
-  /* Gallery Modal Styles */
+        body {
+            margin: 12px;
+            padding: 0;
+        }
+
+/* Gallery Modal Styles */
         .gallery-modal {
             display: none;
             position: fixed;

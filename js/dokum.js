@@ -23,7 +23,7 @@
                             title: "Hari Guru Nasional",
                             date: "10 Oktober 2025",
                             description: "Perayaan Hari Guru Nasional dengan berbagai kegiatan kreatif dan edukatif.",
-                            thumbnail: "assets/event/hgn/IMG_4848.JPG",
+                            thumbnail: "assets/event/hgn/hdr.webp",
                             images: [
                                 {
                                     url: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1200",
@@ -49,10 +49,10 @@
                         },
                         {
                             id: 2,
-                            title: "Pentas Seni (PENSI)",
+                            title: "EPOK S10",
                             date: "15 Desember 2025",
-                            description: "Ajang kreativitas siswa dalam bidang musik, tari, dan seni rupa.",
-                            thumbnail: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600",
+                            description: "Kompetisi olahraga dan seni antar kelas untuk mempererat solidaritas siswa.",
+                            thumbnail: "assets/event/epok/hdr.webp",
                             images: [
                                 {
                                     url: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200",
@@ -74,10 +74,10 @@
                         },
                         {
                             id: 3,
-                            title: "Rapat Pleno Awal Tahun",
-                            date: "5 Januari 2026",
-                            description: "Sinkronisasi program kerja antar sekbid untuk semester genap.",
-                            thumbnail: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=600",
+                            title: "Ngobrolin Kampus",
+                            date: "17  Januari 2026",
+                            description: "Acara edukatif dengan tujuan membantu siswa naik level pendidikan, menampilkan kampus fest, dan diskusi interaktif.",
+                            thumbnail: "assets/event/ngmps/hdr.webp",
                             images: [
                                 {
                                     url: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1200",

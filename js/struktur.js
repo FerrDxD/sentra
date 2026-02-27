@@ -4,7 +4,7 @@
                 id: 'ketua',
                 nama: 'Cecillia Natasya Sonthani',
                 jabatan: 'Ketua Umum',
-                foto: 'assets/pp/cece.JPG',
+                foto: 'assets/pp/cece.webp',
                 kelas: 'XI.2',
                 tempatLahir: 'Bekasi',
                 tanggalLahir: '11 Januari 2009',
@@ -20,16 +20,34 @@
                 ],
                 programKerja: [
                     {
-                        nama: 'Leadership Training',
-                        deskripsi: 'Pelatihan kepemimpinan untuk pengurus OSIS baru',
+                        nama: 'Monthly Strategy Alignment (MSA)',
+                        deskripsi: 'Mengadakan rapat koordinasi rutin setiap 1 bulan sekali untuk evaluasi dan perencanaan kegiatan organisasi',
                         target: 'Seluruh pengurus OSIS',
                         status: 'Berjalan'
                     },
                     {
-                        nama: 'Rapat Koordinasi Rutin',
-                        deskripsi: 'Rapat mingguan untuk evaluasi dan perencanaan program',
-                        target: 'Pengurus inti',
+                        nama: 'Revival 24',
+                        deskripsi: 'Melaksanakan kembali program JAMPARIKU, LISA, dan Kotak Aspirasi Siswa',
+                        target: 'Seluruh Siswa',
                         status: 'Berjalan'
+                    },
+                    {
+                         nama: 'The Patriot Games',
+                        deskripsi: 'Mengadakan kompetisi bertema wawasan kebangsaan antar kelas untuk meningkatkan rasa nasionalisme',
+                        target: 'Seluruh siswa',
+                        status: 'Rencana'
+                    },
+                    {
+                         nama: 'OSIS News & Info Creative',
+                        deskripsi: 'Menjalankan mading informatif dan kreativitas',
+                        target: 'Seluruh Siswa',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Operation Zero Plastic',
+                        deskripsi: 'Mengadakan kegiatan pengurangan penggunaan plastik di lingkungan sekolah selama satu hari penuh',
+                        target: 'Seluruh Siswa',
+                        status: 'Rencana'
                     }
                 ]
             },
@@ -37,7 +55,7 @@
                 id: 'wakil1',
                 nama: 'Adam Abdulloh Mu\'arif',
                 jabatan: 'Wakil Ketua 1',
-                foto: 'assets/pp/adam.JPG',
+                foto: 'assets/pp/adam.webp',
                 kelas: 'XI.5',
                 tempatLahir: 'bogor',
                 tanggalLahir: '18 Juli 2008',
@@ -46,15 +64,33 @@
                 motto: 'Sesungguh Bersama Kesulitan Ada Kemudahan.',
                 programKerja: [
                     {
-                        nama: 'Koordinasi Bidang Akademik',
-                        deskripsi: 'Mengawasi dan mendukung program sekbid akademik',
-                        target: 'Sekbid 3,4,5',
+                        nama: 'Integrasi',
+                        deskripsi: 'Membantu Ketua OSIS dalam merencanakan, mengoordinasikan, dan melaksanakan seluruh kegiatan OSIS.',
+                        target: 'Ketua OSIS',
                         status: 'Berjalan'
                     },
                     {
-                        nama: 'Pengembangan Minat dan Bakat',
-                        deskripsi: 'Fasilitasi pengembangan bakat siswa',
-                        target: 'Seluruh siswa',
+                        nama: 'Networking',
+                        deskripsi: 'Menjaga komunikasi antara pengurus OSIS dengan pihak sekolah dan siswa.',
+                        target: 'Seluruh Warga Sekolah',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Monitoring Lapangan',
+                        deskripsi: 'Membantu mengawasi kinerja setiap seksi bidang agar program kerja berjalan sesuai jadwal.',
+                        target: 'Seluruh Sekbid',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Pembinaan karakter',
+                        deskripsi: 'Mengadakan kegiatan atau perlombaan kelas terbersih dan terkreatif.',
+                        target: 'Seluruh Siswa',
+                        status: 'Rencana'
+                    },
+                    {
+                        nama: 'Pengembangan Wawasan',
+                        deskripsi: 'Mengadakan lomba cerdas cermat dalam event cerdas cermat.',
+                        target: 'Seluruh Siswa',
                         status: 'Rencana'
                     }
                 ]
@@ -63,24 +99,30 @@
                 id: 'wakil2',
                 nama: 'Muhammad Fadhli Hidayatullah',
                 jabatan: 'Wakil Ketua 2',
-                foto: 'assets/pp/adi.JPG',
+                foto: 'assets/pp/adi.webp',
                 kelas: 'X.7',
-                tempatLahir: 'Surabaya',
-                tanggalLahir: '10 November 2008',
-                alamat: 'Jl. Pahlawan No. 23, Surabaya',
-                hobi: 'Fotografi, Menulis',
-                motto: 'Kreativitas adalah kunci inovasi.',
+                tempatLahir: 'Bekasi',
+                tanggalLahir: '13 Desember 2009',
+                alamat: ' Citra Indah City, Bukit Palem Blok S.21 no. 11',
+                hobi: 'Ngonten, Menyanyi',
+                motto: 'Pelan tapi konsisten, kecil tapi berdampak.',
                 programKerja: [
                     {
-                        nama: 'Koordinasi Bidang Non-Akademik',
-                        deskripsi: 'Mengawasi program sekbid non-akademik',
-                        target: 'Sekbid 6,7,8,9,10',
-                        status: 'Berjalan'
+                        nama: 'Kartini of The Year',
+                        deskripsi: 'Program pemilihan figur siswi teladan tahunan.',
+                        target: 'Seluruh siswi',
+                        status: 'Rencana'
                     },
                     {
-                        nama: 'Festival Kreativitas Siswa',
-                        deskripsi: 'Event tahunan untuk menampilkan kreativitas siswa',
-                        target: 'Seluruh siswa',
+                        nama: 'Voice Box',
+                        deskripsi: 'Wadah bagi siswa menyampaikan ide, saran, kritik dan sebagainya.',
+                        target: 'Seluruh siswa/i',
+                        status: 'Rencana'
+                    },
+                    {
+                        nama: 'Cinema Edutalk',
+                        deskripsi: 'Membuka wawasan siswa melalui film pendek.',
+                        target: 'Seluruh siswa/i',
                         status: 'Rencana'
                     }
                 ]
@@ -89,25 +131,55 @@
                 id: 'sekum',
                 nama: 'Maulana Ferdi Irawan',
                 jabatan: 'Sekretaris Umum',
-                foto: 'assets/pp/pe.JPG',
+                foto: 'assets/pp/pe.webp',
                 kelas: 'XI.2',
                 tempatLahir: 'Bogor',
                 tanggalLahir: '4 Agustus 2008',
                 alamat: 'Jl. Desa Sukamaju No.43 Kp. Menan',
                 hobi: 'Menulis, Desain Grafis, Coding',
-                motto: 'Selesai Ngga Selesai Dikumpulkan',
+                motto: 'Yang kau dengar itu opini, yang kau lihat itu persepsi',
                 programKerja: [
                     {
-                        nama: 'Sistem Elektronik Terpadu',
-                        deskripsi: 'Digitalisasi dokumen dan arsip OSIS',
+                        nama: 'Ekspedisi Makna',
+                        deskripsi: 'Mengonstruksi narasi filosofis dan makna simbolik di balik logo Nawasena, melalui proses analisis mendalam terhadap bentuk, warna, tipografi, dan komposisinya, lalu menerjemahkannya ke dalam prinsip-prinsip panduan (guiding principles) yang koheren.',
                         target: 'Seluruh pengurus',
                         status: 'Berjalan'
                     },
                     {
-                        nama: 'Buku Tahunan OSIS',
-                        deskripsi: 'Penyusunan laporan tahunan OSIS',
-                        target: 'Dokumentasi periode',
+                        nama: 'INFRA-SUARA',
+                        deskripsi: 'Mengembangkan dan menyediakan platform media yang mudah diakses dan inklusif sebagai infrastruktur pendukung utama bagi keberlangsungan program kotak suara, guna memastikan partisipasi yang luas dan setara dari seluruh pemangku kepentingan.',
+                        target: 'Seluruh warga sekolah',
                         status: 'Rencana'
+                    },
+                    {
+                        nama: 'Sistem Elektronik Terpadu',
+                        deskripsi: 'Merancang solusi dashboard digital berbasis website yang memfasilitasi monitoring performa kegiatan dan manajemen arsip OSIS secara terpusat, transparan, dan mudah diakses oleh seluruh pemangku kepentingan.',
+                        target: 'Seluruh pengurus',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Diplomasi Eksternal',
+                        deskripsi: 'Mengelola hubungan eksternal  dan memimpin negosiasi dengan calon mitra serta sponsor potensial, guna membangun aliansi yang saling menguntungkan dan mendukung keberlanjutan program organisasi.',
+                        target: 'Membangun Relasi dengan Pihak Eksternal',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Ethos, Pathos, Logos',
+                        deskripsi: 'Membangun sistem manajemen talenta dan pengembangan pengurus OSIS melalui instrumen kredit skor yang terukur. Sistem ini berfungsi ganda: (a) sebagai peta kompetensi (competency mapping) untuk memetakan keaktifan dan kontribusi, serta (b) sebagai panduan pengembangan (development roadmap) yang berorientasi pada penciptaan individu yang unggul (great) dan beretika (ethical).',
+                        target: 'Seluruh pengurus',
+                        status: 'Rencana'
+                    },
+                    {
+                        nama: 'Manufaktur Administrasi',
+                        deskripsi: 'Menyusun dan memproduksi seluruh dokumen administratif sekolah yang diperlukan, meliputi laporan kegiatan, surat menyurat resmi (undangan, edaran), proposal program, lembar pertanggungjawaban keuangan (LPJ), serta invoice dan dokumen pendukung lainnya.',
+                        target: 'Administrasi OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Navigator Strategis',
+                        deskripsi: 'Bertindak sebagai penasihat pendamping bagi Ketua dengan menyediakan kajian mendalam, alternatif solusi, serta analisis risiko guna menyelaraskan keputusan dengan tujuan strategis organisasi dan memastikan implementasi yang tepat sasaran.',
+                        target: 'Pematangan keputusan strategis',
+                        status: 'Berjalan'
                     }
                 ]
             },
@@ -115,7 +187,7 @@
                 id: 'sek1',
                 nama: 'Anggun Permata Jalasena Putri',
                 jabatan: 'Sekretaris 1',
-                foto: 'assets/pp/anggun.JPG',
+                foto: 'assets/pp/anggun.webp',
                 kelas: 'XI.5',
                 tempatLahir: 'Jakarta',
                 tanggalLahir: '2 November 2008',
@@ -124,9 +196,33 @@
                 motto: 'Jadilah versi terbaik dari dirimu setiap hari.',
                 programKerja: [
                     {
-                        nama: 'Notulensi Rapat Digital',
-                        deskripsi: 'Pembuatan notulensi rapat yang sistematis',
+                        nama: 'Narative Keeper',
+                        deskripsi: 'Mencatat notulen rapat OSIS dan rapat kepanitiaan.',
                         target: 'Setiap rapat OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'InfoHub Command',
+                        deskripsi: 'Membantu menyusun, mengarsipkan, dan mendokumentasikan surat masuk dan surat keluar.',
+                        target: 'Administrasi OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Co-pilot Project',
+                        deskripsi: 'Membantu Sekretaris Umum OSIS dalam menjalankan tugas administrasi organisasi.',
+                        target: 'Administrasi OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Visual Report',
+                        deskripsi: 'Membantu pembuatan laporan kegiatan OSIS dalam bentuk visual.',
+                        target: 'Administrasi OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Data Vault',
+                        deskripsi: 'Mengelola arsip, data anggota OSIS, serta dokumen penting lainnya.',
+                        target: 'Administrasi OSIS',
                         status: 'Berjalan'
                     }
                 ]
@@ -135,17 +231,35 @@
                 id: 'sek2',
                 nama: 'Inez Mikha Rahayu',
                 jabatan: 'Sekretaris 2',
-                foto: 'assets/pp/inez.JPG',
-                kelas: 'XI IPS 2',
-                tempatLahir: 'Malang',
-                tanggalLahir: '30 April 2008',
-                alamat: 'Jl. Bromo No. 12, Malang',
-                hobi: 'Menyanyi, Menari',
-                motto: 'Setiap catatan adalah sejarah.',
+                foto: 'assets/pp/inez.webp',
+                kelas: 'X.3',
+                tempatLahir: 'Bogor',
+                tanggalLahir: '2 November 2009',
+                alamat: 'Satus Balekambang Jonggol Bogor Jawa Barat Indonesia',
+                hobi: 'Memasak, Menari',
+                motto: 'jangan cari yang terbaik, tapi jadilah yang terbaik.',
                 programKerja: [
                     {
-                        nama: 'Arsip Surat Menyurat',
-                        deskripsi: 'Pengelolaan surat masuk dan keluar',
+                        nama: 'Operasi Tangan Kanan',
+                        deskripsi: 'Memberikan dukungan administratif yang komprehensif kepada Sekretaris Umum dalam mengelola agenda, korespondensi, dan dokumen organisasi.',
+                        target: 'Administrasi OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Dengar, Salin, Susun',
+                        deskripsi: 'Bertanggung jawab atas dokumentasi rapat yang mencakup dua aspek utama: (1) pencatatan kehadiran peserta secara tertulis, dan (2) perapian catatan hasil diskusi (minutes of meeting) menjadi sebuah notula resmi yang terstruktur, jelas, dan siap didistribusikan kepada seluruh anggota OSIS. ',
+                        target: 'Administrasi OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Gudang OSIS',
+                        deskripsi: 'Melakukan kurasi, penyimpanan, dan pemeliharaan arsip kegiatan OSIS (seperti foto, video, proposal, laporan, dan sertifikat) secara sistematis sebagai aset pengetahuan (knowledge assets) dan bahan evaluasi untuk perencanaan kegiatan mendatang.',
+                        target: 'Administrasi OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Harmoni Tugas',
+                        deskripsi: 'Berkontribusi aktif dalam perencanaan dan pengaturan jadwal kerja harian guna meningkatkan efisiensi operasional dan meminimalisir tumpang tindih tugas antar pengurus OSIS.',
                         target: 'Administrasi OSIS',
                         status: 'Berjalan'
                     }
@@ -155,7 +269,7 @@
                 id: 'bendum',
                 nama: 'Lulu Karpika',
                 jabatan: 'Bendahara Umum',
-                foto: 'assets/pp/lulu.JPG',
+                foto: 'assets/pp/lulu.webp',
                 kelas: 'XI.5',
                 tempatLahir: 'Bogor',
                 tanggalLahir: '15 Mei 2009',
@@ -164,15 +278,33 @@
                 motto: 'Hargai proses dan nikmati hasilnya.',
                 programKerja: [
                     {
-                        nama: 'Sistem Keuangan Digital',
-                        deskripsi: 'Aplikasi pencatatan keuangan OSIS',
-                        target: 'Transparansi keuangan',
+                        nama: 'Pengelolaan Anggaran',
+                        deskripsi: 'Menyusun dan mengelola anggaran keuangan OSIS sesuai dengan proposal kegiatan dan kebijakan sekolah.',
+                        target: 'Seluruh kegiatan OSIS',
                         status: 'Berjalan'
                     },
                     {
-                        nama: 'Fundraising Creative',
-                        deskripsi: 'Program penggalangan dana kreatif',
-                        target: 'Kas OSIS',
+                        nama: 'Pencatatan Transaksi',
+                        deskripsi: 'Mencatat setiap transaksi keuangan dengan rinci dan sistematis untuk transparansi dan akuntabilitas.',
+                        target: 'Administrasi Keuangan OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                         nama: 'Financial Governance',
+                        deskripsi: 'Memastikan penyajian laporan keuangan yang wajar dan transparan, didukung oleh dokumentasi dan analisis yang memadai.',
+                        target: 'Transparansi Keuangan',
+                        status: 'Berjalan'
+                    },
+                    {
+                         nama: 'Brangkas OSIS',
+                        deskripsi: 'Bertanggung jawab penuh atas penyimpanan, pengamanan, dan pencatatan seluruh dana kas milik Organisasi Siswa Intra Sekolah (OSIS), serta memastikan ketersediaan fisik uang sesuai dengan catatan administrasi keuangan.',
+                        target: 'Keamanan dan Ketersediaan Dana',
+                        status: 'Berjalan'
+                    },
+                    {
+                         nama: 'Audit Berkala',
+                        deskripsi: 'Melakukan pemeriksaan berkala terhadap penggunaan dana dan dokumentasi keuangan OSIS',
+                        target: 'Akuntabilitas Keuangan OSIS',
                         status: 'Rencana'
                     }
                 ]
@@ -181,7 +313,7 @@
                 id: 'ben1',
                 nama: 'Erlangga Nuriansyah',
                 jabatan: 'Bendahara 1',
-                foto: 'assets/pp/angga.JPG',
+                foto: 'assets/pp/angga.webp',
                 kelas: 'X.8',
                 tempatLahir: 'Jakarta',
                 tanggalLahir: '10 Januari 2010',
@@ -190,9 +322,33 @@
                 motto: 'Jatuh itu biasa, bangkit itu pilihan',
                 programKerja: [
                     {
-                        nama: 'Laporan Keuangan Bulanan',
-                        deskripsi: 'Penyusunan laporan keuangan periodik',
-                        target: 'Transparansi',
+                        nama: 'Penerimaan Kas',
+                        deskripsi: 'Menyusun laporan keuangan periodik terkait penerimaan kas OSIS',
+                        target: 'Transparansi Keuangan OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Audit Trail',
+                        deskripsi: 'Membantu memastikan penggunaan dana sesuai dengan anggaran yang telah disetujui.',
+                        target: 'Akuntabilitas Keuangan OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Pembukuan Harian',
+                        deskripsi: 'Membuat catatan harian transaksi keuangan dan menyimpan bukti transaksi secara rapi',
+                        target: 'Transparansi Keuangan OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Garda Alternatif',
+                        deskripsi: 'Pengganti Bendahara Umum Jika berhalangan hadir',
+                        target: 'Keberlangsungan Operasional Keuangan OSIS',
+                        status: 'Berjalan'
+                    },
+                    {
+                        nama: 'Pengarsipan Bukti',
+                        deskripsi: 'Menyimpan dan mengarsipkan bukti transaksi keuangan secara rapi dan terstruktur',
+                        target: 'Transparansi Keuangan OSIS',
                         status: 'Berjalan'
                     }
                 ]
