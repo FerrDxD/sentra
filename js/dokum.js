@@ -22,28 +22,28 @@
                             id: 1,
                             title: "Hari Guru Nasional",
                             date: "10 Oktober 2025",
-                            description: "Perayaan Hari Guru Nasional dengan berbagai kegiatan kreatif dan edukatif.",
+                            description: "Perayaan Hari Guru Nasional dengan berbagai kegiatan seru untuk menghormati jasa para guru.",
                             thumbnail: "assets/event/hgn/hdr.webp",
                             images: [
                                 {
-                                    url: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1200",
-                                    caption: "Pembukaan LDKS oleh Kepala Sekolah"
+                                    url: "assets/event/hgn/1.webp",
+                                    caption: "Upacara Pengibaran Sang Merah Putih"
                                 },
                                 {
-                                    url: "https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=1200",
-                                    caption: "Sesi materi kepemimpinan"
+                                    url: "assets/event/hgn/2.webp",
+                                    caption: "Parade dan Penyerahan Kue kepada Guru"
                                 },
                                 {
-                                    url: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1200",
-                                    caption: "Diskusi kelompok"
+                                    url: "assets/event/hgn/3.webp",
+                                    caption: "Penyampaian Kesan dan Pesan Siswa untuk Guru"
                                 },
                                 {
-                                    url: "https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1200",
-                                    caption: "Games seru"
+                                    url: "assets/event/hgn/4.webp",
+                                    caption: "Silih Asih dan Pemberian Hadiah untuk Guru"
                                 },
                                 {
-                                    url: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?q=80&w=1200",
-                                    caption: "Foto bersama"
+                                    url: "assets/event/hgn/5.webp",
+                                    caption: "Pentas Seni Siswa"
                                 }
                             ]
                         },
@@ -55,20 +55,36 @@
                             thumbnail: "assets/event/epok/hdr.webp",
                             images: [
                                 {
-                                    url: "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=1200",
-                                    caption: "Penampilan band siswa"
+                                    url: "assets/event/epok/1.webp",
+                                    caption: "Upacara Pembukaan EPOK S10"
                                 },
                                 {
-                                    url: "https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?q=80&w=1200",
-                                    caption: "Tari tradisional"
+                                    url: "assets/event/epok/2.webp",
+                                    caption: "Absensi Peserta"
                                 },
                                 {
-                                    url: "https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?q=80&w=1200",
-                                    caption: "Penampilan solo vokal"
+                                    url: "assets/event/epok/3.webp",
+                                    caption: "Penampilan Modern Dance"
                                 },
                                 {
-                                    url: "https://images.unsplash.com/photo-1501612780327-45045538702b?q=80&w=1200",
-                                    caption: "Penampilan teater"
+                                    url: "assets/event/epok/4.webp",
+                                    caption: "Penampilan Tari Tradisional"
+                                },
+                                {
+                                    url: "assets/event/epok/5.webp",
+                                    caption: "Pertandingan Futsal Antar Kelas"
+                                },
+                                {
+                                    url: "assets/event/epok/6.webp",
+                                    caption: "Pertandingan Basket Antar Kelas"
+                                },
+                                {
+                                    url: "assets/event/epok/7.webp",
+                                    caption: "Pertandingan Dodgeball Antar Kelas"
+                                },
+                                {
+                                    url: "assets/event/epok/8.webp",
+                                    caption: "Stand Jualan Makanan dan Minuman"
                                 }
                             ]
                         },
@@ -80,20 +96,24 @@
                             thumbnail: "assets/event/ngmps/hdr.webp",
                             images: [
                                 {
-                                    url: "https://images.unsplash.com/photo-1529070538774-1843cb3265df?q=80&w=1200",
-                                    caption: "Pembukaan rapat"
+                                    url: "assets/event/ngmps/1.webp",
+                                    caption: "Sesi pembukaan dengan sambutan"
                                 },
                                 {
-                                    url: "https://images.unsplash.com/photo-1543269664-7eef42226a21?q=80&w=1200",
-                                    caption: "Diskusi program kerja"
+                                    url: "assets/event/ngmps/2.webp",
+                                    caption: "Penampilan Tari Tradisional sebagai pembuka acara"
                                 },
                                 {
-                                    url: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=1200",
-                                    caption: "Penyampaian aspirasi"
+                                    url: "assets/event/ngmps/4.webp",
+                                    caption: "Pengenalan Alumni yang sukses di berbagai bidang"
                                 },
                                 {
-                                    url: "https://images.unsplash.com/photo-1557804506-669a67965ba0?q=80&w=1200",
-                                    caption: "Momen kebersamaan"
+                                    url: "assets/event/ngmps/5.webp",
+                                    caption: "Penampilan Modern Dance oleh siswa sebagai hiburan intermezzo"
+                                },
+                                {
+                                    url: "assets/event/ngmps/6.webp",
+                                    caption: "Seminar dan diskusi interaktif dengan alumni dan perwakilan kampus"
                                 }
                             ]
                         }
