@@ -246,49 +246,46 @@ body.dark-theme .tier-card {
     margin-bottom: 1.4rem;
 }
 
-.t-bronze .tier-icon { background: rgba(180,108,70,.1); }
-.t-silver .tier-icon { background: rgba(148,163,184,.1); }
-.t-gold   .tier-icon { background: rgba(234,179,8,.1); }
-.t-plat   .tier-icon { background: rgba(99,102,241,.1); }
-
+/* ─────────────────────────────────────────────
+   SHARED TIER BASE STYLES
+───────────────────────────────────────────── */
 .tier-label {
     font-size: .72rem;
     font-weight: 800;
     letter-spacing: 2.5px;
     text-transform: uppercase;
     margin-bottom: .3rem;
+    text-align: center;
 }
-.t-bronze .tier-label { color: #b46c46; }
-.t-silver .tier-label { color: #94a3b8; }
-.t-gold   .tier-label { color: #ca8a04; }
-.t-plat   .tier-label { color: #6366f1; }
 
 .tier-title {
-    font-size: 1.55rem;
+    font-size: 1.45rem;
     font-weight: 800;
     color: var(--text-main);
     margin-bottom: .5rem;
+    text-align: center;
 }
 
 .tier-sub {
     font-size: .88rem;
     color: var(--text-muted);
-    line-height: 1.6;
+    line-height: 1.65;
     margin-bottom: 1.4rem;
+    text-align: center;
 }
 
 .tier-hr {
     border: none;
     height: 1px;
     background: rgba(0,0,0,.07);
-    margin-bottom: 1.4rem;
+    margin-bottom: 1.2rem;
 }
 body.dark-theme .tier-hr { background: rgba(255,255,255,.07); }
 
 .tier-perks {
     list-style: none;
     padding: 0;
-    margin: 0 0 1.5rem;
+    margin: 0 0 1.2rem;
     flex: 1;
 }
 
@@ -296,9 +293,10 @@ body.dark-theme .tier-hr { background: rgba(255,255,255,.07); }
     display: flex;
     align-items: flex-start;
     gap: .7rem;
-    padding: .5rem 0;
+    padding: .55rem 0;
     font-size: .88rem;
     border-bottom: 1px solid rgba(0,0,0,.04);
+    line-height: 1.5;
 }
 body.dark-theme .tier-perks li { border-bottom-color: rgba(255,255,255,.04); }
 .tier-perks li:last-child { border-bottom: none; }
@@ -312,12 +310,8 @@ body.dark-theme .tier-perks li { border-bottom-color: rgba(255,255,255,.04); }
     flex-shrink: 0;
     font-size: .72rem;
     font-weight: 700;
-    margin-top: 1px;
+    margin-top: 2px;
 }
-.t-bronze .perk-dot { background: rgba(180,108,70,.15); color: #b46c46; }
-.t-silver .perk-dot { background: rgba(148,163,184,.15); color: #64748b; }
-.t-gold   .perk-dot { background: rgba(234,179,8,.15);   color: #ca8a04; }
-.t-plat   .perk-dot { background: rgba(99,102,241,.15);  color: #6366f1; }
 
 .tier-btn {
     display: block;
@@ -327,15 +321,75 @@ body.dark-theme .tier-perks li { border-bottom-color: rgba(255,255,255,.04); }
     font-weight: 700;
     font-size: .9rem;
     text-decoration: none;
-    border: 2px solid var(--accent);
-    color: var(--accent);
+    border: 2px solid currentColor;
     transition: all .3s;
+    font-family: 'Inter', sans-serif;
 }
-.tier-btn:hover,
-.is-featured .tier-btn {
-    background: var(--accent);
-    color: white;
+
+/* ─────────────────────────────────────────────
+   GEM ICON
+───────────────────────────────────────────── */
+.gem-wrap {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 1.4rem;
+    filter: drop-shadow(0 8px 16px rgba(0,0,0,.22));
+    transition: transform .4s ease, filter .4s ease;
 }
+.tier-card:hover .gem-wrap {
+    transform: translateY(-6px) rotate(4deg);
+    filter: drop-shadow(0 14px 22px rgba(0,0,0,.3));
+}
+.gem-svg { width: 100%; height: 100%; }
+
+/* ─────────────────────────────────────────────
+   TIER PRICE
+───────────────────────────────────────────── */
+.tier-price {
+    font-size: 1.55rem;
+    font-weight: 800;
+    text-align: center;
+    padding: .9rem 1rem;
+    border-radius: 14px;
+    margin-bottom: 1rem;
+    letter-spacing: -.5px;
+}
+
+/* ─────────────────────────────────────────────
+   GEMSTONE COLOR THEMES
+───────────────────────────────────────────── */
+
+/* — AMETHYST — */
+.t-amethyst .tier-label  { color: #9333ea; }
+.t-amethyst .perk-dot    { background: rgba(147,51,234,.15); color: #9333ea; }
+.t-amethyst .tier-price  { background: rgba(147,51,234,.10); color: #7e22ce; }
+.t-amethyst .tier-btn    { border-color: #9333ea; color: #9333ea; }
+.t-amethyst .tier-btn:hover { background: #9333ea; color: white; }
+.t-amethyst.is-featured  { border-color: #9333ea; }
+
+/* — TOPAZ — */
+.t-topaz .tier-label  { color: #d97706; }
+.t-topaz .perk-dot    { background: rgba(217,119,6,.15); color: #d97706; }
+.t-topaz .tier-price  { background: rgba(217,119,6,.10); color: #b45309; }
+.t-topaz .tier-btn    { border-color: #d97706; color: #d97706; }
+.t-topaz .tier-btn:hover { background: #d97706; color: white; }
+
+/* — SAPPHIRE — */
+.t-sapphire .tier-label  { color: #2563eb; }
+.t-sapphire .perk-dot    { background: rgba(37,99,235,.15); color: #2563eb; }
+.t-sapphire .tier-price  { background: rgba(37,99,235,.10); color: #1d4ed8; }
+.t-sapphire .tier-btn    { border-color: #2563eb; color: #2563eb; }
+.t-sapphire .tier-btn:hover,
+.t-sapphire.is-featured .tier-btn { background: #2563eb; color: white; }
+.t-sapphire.is-featured  { border-color: #2563eb; background: linear-gradient(160deg, rgba(37,99,235,.07), var(--bg-card) 60%); }
+.t-sapphire .tier-ribbon { background: linear-gradient(135deg, #2563eb, #7c3aed); }
+
+/* — ALEXANDRITE — */
+.t-alex .tier-label  { color: #0d9488; }
+.t-alex .perk-dot    { background: rgba(13,148,136,.15); color: #0d9488; }
+.t-alex .tier-price  { background: rgba(13,148,136,.10); color: #0f766e; }
+.t-alex .tier-btn    { border-color: #0d9488; color: #0d9488; }
+.t-alex .tier-btn:hover { background: #0d9488; color: white; }
 
 /* ─────────────────────────────────────────────
    PARTNER TYPES
