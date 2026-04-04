@@ -42,45 +42,88 @@
         </div>
 
         <div class="modern-grid" id="gallery-container">
-            <!-- Konten akan diisi oleh JavaScript dari data.json -->
+            <!-- Konten diisi oleh dokum.js -->
         </div>
     </main>
 
-    <!-- Gallery Modal -->
-    <div id="galleryModal" class="gallery-modal">
-        <div class="gallery-modal-content">
-            <div class="gallery-header">
-                <div>
-                    <h2 id="modalEventTitle">Loading...</h2>
-                    <p id="modalEventDate">Loading...</p>
+    <!-- ============================================================
+         ARTICLE MODAL
+    ============================================================ -->
+    <div id="articleModal" class="article-modal">
+        <div class="article-container">
+
+            <!-- Hero Foto -->
+            <div class="article-hero">
+                <img id="articleModalHero" src="" alt="">
+                <div class="article-hero-overlay"></div>
+                <div class="article-hero-meta">
+                    <span class="article-hero-tag">Kegiatan OSIS</span>
+                    <h2 class="article-hero-title" id="articleModalTitle">Loading...</h2>
+                    <p class="article-hero-date" id="articleModalDate">Loading...</p>
                 </div>
-                <button class="close-gallery" onclick="closeGallery()">&times;</button>
+                <button class="close-article" onclick="closeArticle()">&times;</button>
             </div>
-            
-            <div class="gallery-main">
-                <button class="nav-btn prev" onclick="prevImage()">
-                    <span class="material-symbols-outlined">chevron_left</span>
-                </button>
-                
-                <div class="main-image-container">
-                    <img id="mainImage" class="main-image" src="" alt="Gallery Image">
-                    <div id="imageCaption" class="image-caption"></div>
-                    <div id="imageCounter" class="image-counter"></div>
+
+            <!-- Body Artikel -->
+            <div class="article-body">
+
+                <!-- Narasi / tulisan artikel -->
+                <div class="article-narasi" id="articleModalNarasi">
+                    <!-- diisi JS -->
                 </div>
-                
-                <button class="nav-btn next" onclick="nextImage()">
-                    <span class="material-symbols-outlined">chevron_right</span>
-                </button>
-            </div>
-            
-            <div class="gallery-thumbnails" id="thumbnailContainer">
-                <div class="thumbnail-container" id="thumbnailList">
-                    <!-- Thumbnails akan diisi oleh JavaScript -->
+
+                <!-- Divider -->
+                <div class="article-divider">
+                    <span>Galeri Foto</span>
                 </div>
+
+                <!-- Grid Foto -->
+                <div id="articleModalPhotos">
+                    <!-- diisi JS -->
+                </div>
+
             </div>
         </div>
     </div>
 
+    <!-- ============================================================
+         LIGHTBOX
+    ============================================================ -->
+    <div id="lightboxModal" class="lightbox">
+        <div class="lightbox-inner">
+
+            <div class="lightbox-top">
+                <div class="lightbox-title-wrap">
+                    <h3 id="lbEventTitle"></h3>
+                </div>
+                <span class="lightbox-counter" id="lbCounter">1 / 1</span>
+                <button class="close-lightbox" onclick="closeLightbox()">&times;</button>
+            </div>
+
+            <div class="lightbox-stage">
+                <button class="lb-nav prev" onclick="lbPrev()">
+                    <span class="material-symbols-outlined">chevron_left</span>
+                </button>
+
+                <img id="lbMainImage" src="" alt="">
+
+                <button class="lb-nav next" onclick="lbNext()">
+                    <span class="material-symbols-outlined">chevron_right</span>
+                </button>
+            </div>
+
+            <div class="lb-caption" id="lbCaption"></div>
+
+            <div class="lightbox-strip">
+                <div class="lb-thumb-list" id="lbThumbList">
+                    <!-- thumbnails diisi JS -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Mini Music Player -->
     <div class="mini-player">
         <div class="player-info">
             <p class="track-name" style="font-weight: bold; font-size: 0.8rem;">Radio Nawasena</p>
