@@ -1,0 +1,636 @@
+/* ═══════════════════════════════════════════════
+   HOF.CSS — Hall of Fame
+   OSIS Nawasena 2025/2026
+═══════════════════════════════════════════════ */
+
+/* ─────────────────────────────────────────────
+   BODY OVERRIDE — dark cinematic base
+───────────────────────────────────────────── */
+.hof-body {
+    background-color: #050810;
+    color: #f1f5f9;
+}
+
+/* Override CSS vars untuk seluruh halaman ini */
+.hof-body {
+    --bg-primary: #050810;
+    --bg-card:    #0d1117;
+    --text-main:  #f1f5f9;
+    --text-muted: #94a3b8;
+    --nav-bg:     rgba(5, 8, 16, 0.92);
+}
+
+/* ─────────────────────────────────────────────
+   HERO
+───────────────────────────────────────────── */
+.hof-hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(ellipse 70% 60% at 50% 0%,   rgba(245,158,11,.09), transparent),
+        radial-gradient(ellipse 50% 40% at 80% 80%,  rgba(99,102,241,.07), transparent),
+        #050810;
+}
+
+/* Subtle gold texture overlay */
+.hof-hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23f59e0b' fill-opacity='0.025'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    pointer-events: none;
+    opacity: .6;
+}
+
+/* Star field canvas area */
+.star-field {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+.star {
+    position: absolute;
+    border-radius: 50%;
+    background: white;
+    animation: star-twinkle var(--dur, 3s) ease-in-out infinite var(--delay, 0s);
+}
+
+@keyframes star-twinkle {
+    0%, 100% { opacity: var(--lo, .15); transform: scale(1); }
+    50%       { opacity: var(--hi, .7);  transform: scale(1.4); }
+}
+
+.hof-hero-inner {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    padding: 8rem 2rem 6rem;
+}
+
+.hof-emblem {
+    margin: 0 auto 1.5rem;
+    width: 80px; height: 80px;
+    animation: emblem-pulse 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 20px rgba(245,158,11,.55));
+}
+
+@keyframes emblem-pulse {
+    0%, 100% { filter: drop-shadow(0 0 16px rgba(245,158,11,.5));  transform: scale(1); }
+    50%       { filter: drop-shadow(0 0 28px rgba(245,158,11,.85)); transform: scale(1.06); }
+}
+
+.hof-eyebrow {
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #f59e0b;
+    margin-bottom: 1rem;
+}
+
+.hof-title {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 900;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    color: #f1f5f9;
+    letter-spacing: -1px;
+}
+.hof-title span {
+    background: linear-gradient(135deg, #fef3c7 0%, #f59e0b 45%, #d97706 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hof-sub {
+    color: #64748b;
+    font-size: 1rem;
+    max-width: 480px;
+    margin: 0 auto 3rem;
+    line-height: 1.8;
+}
+
+.hof-scroll-hint {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    border: 1.5px solid rgba(245,158,11,.3);
+    color: #f59e0b;
+    text-decoration: none;
+    animation: bounce-down 2s ease-in-out infinite;
+    transition: border-color .3s;
+}
+.hof-scroll-hint:hover { border-color: #f59e0b; }
+
+@keyframes bounce-down {
+    0%, 100% { transform: translateY(0); }
+    50%       { transform: translateY(8px); }
+}
+
+/* ─────────────────────────────────────────────
+   MAIN AREA
+───────────────────────────────────────────── */
+.hof-main {
+    padding: 6rem 0 4rem;
+}
+
+/* ─────────────────────────────────────────────
+   PERIOD BLOCKS
+───────────────────────────────────────────── */
+.period-block {
+    margin-bottom: 6rem;
+}
+
+.period-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.period-badge {
+    flex-shrink: 0;
+    position: relative;
+    width: 64px; height: 64px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #1c1917, #292524);
+    border: 2px solid rgba(245,158,11,.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.period-badge.is-current {
+    border-color: #f59e0b;
+    box-shadow: 0 0 20px rgba(245,158,11,.3);
+}
+
+.period-num {
+    font-family: 'Cinzel', serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #f59e0b;
+}
+
+.current-dot {
+    position: absolute;
+    top: 2px; right: 2px;
+    width: 11px; height: 11px;
+    border-radius: 50%;
+    background: #22c55e;
+    border: 2px solid #050810;
+    animation: ping-dot 1.8s ease-in-out infinite;
+}
+
+@keyframes ping-dot {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(34,197,94,.5); }
+    50%       { box-shadow: 0 0 0 5px rgba(34,197,94,0); }
+}
+
+.period-meta { flex: 0 0 auto; }
+
+.period-label {
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: #f59e0b;
+    margin-bottom: .2rem;
+}
+
+.period-title {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+.active-tag {
+    font-family: 'Inter', sans-serif;
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: rgba(34,197,94,.15);
+    color: #4ade80;
+    border: 1px solid rgba(34,197,94,.3);
+    padding: 3px 10px;
+    border-radius: 20px;
+}
+
+.period-year {
+    font-size: .85rem;
+    color: #64748b;
+    margin-top: .3rem;
+}
+
+.period-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, rgba(245,158,11,.25), transparent);
+}
+
+/* ─────────────────────────────────────────────
+   MEMBER WALL (HOF cards)
+───────────────────────────────────────────── */
+.member-wall {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 1.5rem;
+}
+
+.hof-card {
+    background: linear-gradient(160deg, #0d1117, #111827);
+    border-radius: 20px;
+    padding: 1.8rem 1.2rem 1.5rem;
+    text-align: center;
+    border: 1px solid rgba(255,255,255,.06);
+    transition: all .35s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.hof-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgba(245,158,11,.4), transparent);
+    opacity: 0;
+    transition: opacity .35s;
+}
+
+.hof-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(245,158,11,.2);
+    box-shadow: 0 20px 40px rgba(0,0,0,.5), 0 0 0 1px rgba(245,158,11,.1);
+}
+.hof-card:hover::before { opacity: 1; }
+
+/* Current period cards get a subtle teal tint */
+.hof-card.is-current {
+    border-color: rgba(99,102,241,.15);
+}
+.hof-card.is-current::before {
+    background: linear-gradient(90deg, transparent, rgba(99,102,241,.4), transparent);
+}
+.hof-card.is-current:hover {
+    border-color: rgba(99,102,241,.3);
+    box-shadow: 0 20px 40px rgba(0,0,0,.5), 0 0 0 1px rgba(99,102,241,.15);
+}
+
+.hof-photo-wrap {
+    position: relative;
+    width: 78px; height: 78px;
+    margin: 0 auto 1rem;
+}
+
+.hof-photo-wrap img {
+    width: 78px; height: 78px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    background: #1e293b;
+}
+
+.hof-photo-ring {
+    position: absolute;
+    inset: -4px;
+    border-radius: 50%;
+    border: 2px solid rgba(245,158,11,.3);
+    transition: border-color .3s;
+}
+.hof-card:hover .hof-photo-ring { border-color: rgba(245,158,11,.7); }
+
+.hof-card.is-current .hof-photo-ring { border-color: rgba(99,102,241,.35); }
+.hof-card.is-current:hover .hof-photo-ring { border-color: rgba(99,102,241,.8); }
+
+.hof-role {
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: #f59e0b;
+    margin-bottom: .4rem;
+}
+.hof-card.is-current .hof-role { color: #818cf8; }
+
+.hof-name {
+    font-size: .88rem;
+    font-weight: 600;
+    color: #e2e8f0;
+    line-height: 1.4;
+    margin: 0;
+}
+
+/* ─────────────────────────────────────────────
+   DEVELOPER SECTION
+───────────────────────────────────────────── */
+.dev-section {
+    margin-top: 2rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+.dev-section-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.dev-divider-line {
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(99,102,241,.3));
+}
+.dev-divider-line:last-child {
+    background: linear-gradient(to left, transparent, rgba(99,102,241,.3));
+}
+
+.dev-icon-wrap {
+    width: 52px; height: 52px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(99,102,241,.2), rgba(168,85,247,.1));
+    border: 1px solid rgba(99,102,241,.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #818cf8;
+}
+
+.dev-eyebrow {
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #818cf8;
+    margin-bottom: .6rem;
+}
+
+.dev-title {
+    font-family: 'Cinzel', serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: .6rem;
+}
+
+.dev-sub {
+    color: #64748b;
+    font-size: .9rem;
+    max-width: 460px;
+    margin: 0 auto 3rem;
+    line-height: 1.75;
+}
+
+.dev-wall {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+/* ── Dev card ── */
+.dev-card {
+    background: linear-gradient(160deg, #0d1117, #111827);
+    border-radius: 24px;
+    padding: 2.5rem 2rem;
+    border: 1px solid rgba(99,102,241,.12);
+    max-width: 360px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    transition: all .35s;
+}
+
+.dev-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(99,102,241,.3);
+    box-shadow: 0 24px 48px rgba(0,0,0,.5), 0 0 0 1px rgba(99,102,241,.15);
+}
+
+/* featured glow blob */
+.featured-dev { border-color: rgba(99,102,241,.22); }
+
+.dev-glow {
+    position: absolute;
+    width: 220px; height: 220px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(99,102,241,.18), transparent);
+    top: -80px; right: -60px;
+    pointer-events: none;
+}
+
+.dev-photo-wrap {
+    position: relative;
+    width: 96px; height: 96px;
+    margin: 0 auto 1.4rem;
+}
+
+.dev-photo-wrap img {
+    width: 96px; height: 96px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    background: #1e293b;
+}
+
+.dev-photo-ring {
+    position: absolute;
+    inset: -5px;
+    border-radius: 50%;
+    border: 2px solid rgba(99,102,241,.4);
+    animation: dev-ring-spin 8s linear infinite;
+    border-top-color: #818cf8;
+    border-right-color: transparent;
+    border-bottom-color: rgba(99,102,241,.4);
+    border-left-color: transparent;
+}
+
+@keyframes dev-ring-spin {
+    to { transform: rotate(360deg); }
+}
+
+.dev-badge-icon {
+    position: absolute;
+    bottom: -4px; right: -4px;
+    width: 28px; height: 28px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #6366f1, #a855f7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #050810;
+    color: white;
+}
+.dev-badge-icon .material-symbols-outlined { font-size: .9rem; }
+
+.dev-chip {
+    display: inline-block;
+    background: rgba(99,102,241,.15);
+    color: #818cf8;
+    border: 1px solid rgba(99,102,241,.25);
+    font-size: .68rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 20px;
+    margin-bottom: .7rem;
+}
+
+.dev-name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #f1f5f9;
+    margin-bottom: .8rem;
+}
+
+.dev-desc {
+    font-size: .86rem;
+    color: #64748b;
+    line-height: 1.75;
+    margin-bottom: 1.2rem;
+}
+
+.dev-stack {
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.dev-stack span {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+    color: #94a3b8;
+    font-size: .72rem;
+    font-weight: 600;
+    padding: 4px 11px;
+    border-radius: 8px;
+}
+
+.dev-period {
+    font-size: .75rem;
+    color: #475569;
+    font-style: italic;
+}
+
+/* ── Variant kartu kedua (Juansyah — teal accent) ── */
+.dev-glow-alt {
+    background: radial-gradient(circle, rgba(13,148,136,.18), transparent);
+}
+
+.dev-ring-alt {
+    border-color: rgba(13,148,136,.4);
+    border-top-color: #2dd4bf;
+    border-right-color: transparent;
+    border-bottom-color: rgba(13,148,136,.4);
+    border-left-color: transparent;
+}
+
+.dev-badge-alt {
+    background: linear-gradient(135deg, #0d9488, #0891b2);
+}
+
+.dev-chip-alt {
+    background: rgba(13,148,136,.15);
+    color: #2dd4bf;
+    border-color: rgba(13,148,136,.25);
+}
+
+/* ── Closing quote ── */
+.dev-closing {
+    margin-top: 3rem;
+    font-size: .95rem;
+    color: #475569;
+    font-style: italic;
+    line-height: 1.9;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 1.5rem 2rem;
+    border: 1px solid rgba(255,255,255,.05);
+    border-radius: 16px;
+    background: rgba(255,255,255,.02);
+    position: relative;
+}
+
+.dev-closing::before {
+    content: '"';
+    position: absolute;
+    top: -1rem; left: 1.5rem;
+    font-size: 3.5rem;
+    font-family: 'Cinzel', serif;
+    color: rgba(99,102,241,.25);
+    line-height: 1;
+}
+
+/* ─────────────────────────────────────────────
+   BACK BUTTON
+───────────────────────────────────────────── */
+.hof-back-wrap {
+    text-align: center;
+    padding-bottom: 4rem;
+}
+
+.hof-back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: #475569;
+    text-decoration: none;
+    font-size: .88rem;
+    font-weight: 500;
+    padding: 10px 22px;
+    border-radius: 50px;
+    border: 1px solid rgba(255,255,255,.06);
+    transition: all .3s;
+}
+.hof-back-btn:hover {
+    color: #f1f5f9;
+    border-color: rgba(255,255,255,.15);
+    background: rgba(255,255,255,.04);
+}
+
+/* ─────────────────────────────────────────────
+   SCROLL REVEAL
+───────────────────────────────────────────── */
+.reveal {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ─────────────────────────────────────────────
+   RESPONSIVE
+───────────────────────────────────────────── */
+@media (max-width: 768px) {
+    .period-header { flex-wrap: wrap; gap: 1rem; }
+    .period-line { display: none; }
+    .member-wall { grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 1rem; }
+    .hof-hero-inner { padding: 7rem 1.5rem 4rem; }
+}
